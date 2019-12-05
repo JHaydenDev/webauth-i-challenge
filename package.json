@@ -1,0 +1,15 @@
+{
+  "name": "webauth-i-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JHaydenDev/webauth-i-challenge.git",
+  "author": "JHaydenDev <34730927+JHaydenDev@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "knex": "^0.20.3",
+    "node": "^13.3.0",
+    "nodemon": "^2.0.1",
+    "sqlite3": "^4.1.1"
+  }
+}
