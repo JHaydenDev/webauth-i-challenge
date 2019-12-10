@@ -22,5 +22,5 @@ if (req.session && req.session.user) {
 } else {
   res.status(400).json({ messege: "Invalid Credentials" });
 }
-
+}
 module.exports = authRequired;
