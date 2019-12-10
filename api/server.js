@@ -8,15 +8,15 @@ const session = require("express-session");
 const knexSessionStore = require("connect-session-knex")(session);
 
 const sessionOptions = {
-  name: "john", // default sid
+  name: "joe", 
   secret: "keep it  a secret",
   cookie: {
-    maxAge: 1000 * 60 * 60, // How long the cookie is valid in ms
-    secure: false, // HTTPS is necessary for secure cookies, True in production
-    httpOnly: true // Cookie cannot be accessed in js
+    maxAge: 1000 * 60 * 60,
+    secure: false, 
+    httpOnly: true 
   },
-  resave: false, // Forces the session to be saved back to the session store
-  saveUninitialized: false, // Forces session that is uninitialized to be saved to the store
+  resave: false, 
+  saveUninitialized: false, 
 
   store: new knexSessionStore({
     knex: require("../database/dbConfig"),
