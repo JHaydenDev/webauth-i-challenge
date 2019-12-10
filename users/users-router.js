@@ -1,8 +1,8 @@
 const router = require("express").Router();
-
+const authRequired = require("../auth/RequireMiddleware")
 const Users = require("./users-model.js");
 
-router.get("/", (req, res) => {
+router.get("/", authRequired, (req, res) => {
   Users.find()
     .then(users => {
       res.json(users);
